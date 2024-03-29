@@ -39,13 +39,36 @@
     width: 64px;
     height: 60px;
     left: 138px;
-    right: 1238px;
+    right: 1240px;
     top: 5px;
-    bottom: 959px;
-        
-        
+    bottom: 959px;  
         
     }
+
+.social-img{
+    /* icon-instagram */
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: 1748px;
+    right: 140px;
+    top: 19px;
+    bottom: 973px;
+}
+
+.instagram{
+    position: absolute;
+    width: 32px;
+    height: 32px;
+}
+
+.viber {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    right: 50px;
+    top: 1px;
+}
 .text-gl1{
 /* Головна */
     position: absolute;
@@ -56,6 +79,7 @@
     top: 15px;
     bottom: 973px;
     text-decoration: none;
+    color: rgb(0, 0, 0);
     }
 
 .text-gl2{
@@ -68,6 +92,7 @@
     top: 15px;
     bottom: 966px;
     text-decoration: none;
+    color: rgb(0, 0, 0);
 }
 
 .text-gl3 {
@@ -80,6 +105,7 @@
     top: 15px;
     bottom: 966px;
     text-decoration: none;
+    color: rgb(0, 0, 0);
 }
 
 .text-gl4{
@@ -92,10 +118,10 @@
     top: 15px;
     bottom: 963px;
     text-decoration: none;
+    color: rgb(0, 0, 0);
 }
 
     .srift{
-        color: rgb(0, 0, 0);
         font-family: Alexander;
         font-size: 30px;
         font-weight: 400;
