@@ -1,0 +1,54 @@
+@media screen and (min-width: 768px) {
+
+    body {
+        margin: 0;
+    }
+    
+    .layout {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+    
+    header {
+        min-height: auto;
+        max-height: auto;
+  
+        background-color: #FF7E95;
+    }
+    
+    main {
+        flex-grow: 1;
+        background-color: rgb(0, 238, 255);
+    }
+    
+    footer {
+        height: 100px;
+        background-color: brown;
+    }
+    
+    
+    .logo {
+        min-width: auto;
+        max-width: auto;
+        min-height: auto;
+        max-height: auto;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width:998px ) {
+
+}
+@media screen and (max-width:768px ) {
+
+}
+@media screen and (max-width:767px ) {
+
+}
+
+
+
+
+
