@@ -12,7 +12,7 @@
     
     header {
 /* Header 1 */
-    position: absolute;
+    position: fixed;
     width: auto;
     height: 70px;
     left: 0;
@@ -28,10 +28,26 @@
     }
     
     footer {
-        height: 100px;
+        height: auto;
         background-color: #FF7E95;
+        text-align: center;
+        position:relative;
+        margin: 0px;
+        bottom: 0px;
+
+
     }
-    
+
+/* .lin{
+
+position: absolute;
+width: 1900px;
+height: 0;
+left: 0px;
+top: 62px;
+color: #c2ff34;
+}
+     */
     
     .logo {
 /* logo */
@@ -45,6 +61,20 @@
         
     }
 
+    .div-logo2{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .logo2 {
+        /* logo */
+            position: absolute;
+            width: 64px;
+            height: 60px;  
+            left: 138px;  
+            bottom: 5px;
+            }
+
 .social-img{
     /* icon-instagram */
     position: absolute;
@@ -54,6 +84,28 @@
     right: 140px;
     top: 19px;
     bottom: 973px;
+}
+
+.social-img2{
+/* icon-instagram */
+position: absolute;
+width: 32px;
+height: 32px;
+left: 1764px;
+right: 124px;
+top: auto;
+bottom: auto;
+margin-top: 35px;
+    
+}
+
+.social-img3{
+position: absolute;
+left: 1764px;
+right: 124px;
+top: 20px;
+margin: 0px;
+bottom: 0px;
 }
 
 .instagram{
@@ -68,6 +120,28 @@
     height: 32px;
     right: 50px;
     top: 1px;
+}
+
+.instagram-footer{
+    position: absolute;
+    width: 32px;
+    height: 32px;
+}
+
+.viber-footer {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    right: 25px;
+    top: 1px;
+
+}
+
+.text-footer{
+    position: absolute;
+    left: 55px;
+    top: 50px;
+
 }
 .text-gl1{
 /* Головна */
@@ -128,6 +202,16 @@
         line-height: 38px;
         letter-spacing: 0px;
         text-align: left;
+    }
+
+    .footer-text {
+        font-family: Alexander;
+        position:static;
+        text-decoration: none;
+        color: rgb(0, 0, 0);  
+        font-size: 16px;
+        margin: 0px;
+        bottom: 0px;
     }
 }
 
