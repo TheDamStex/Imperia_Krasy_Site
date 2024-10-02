@@ -13,6 +13,8 @@
 
     body {
         margin: 0;
+        padding: 0;
+        box-sizing: border-box;
     }
     
     .layout {
@@ -207,6 +209,17 @@ bottom: 0px;
         text-align: left;
     }
 
+    a {
+        color: black;
+        text-decoration: none;
+        transition: text-shadow 0.3s ease; /* Плавный переход */
+    }
+
+    a:hover{
+        color: rgb(153, 111, 111);
+        text-shadow: 0 0 10px rgb(153, 111, 111);; /* Красное свечение вокруг текста */
+    }
+
     .footer-text {
         font-family: Alexander;
         position:static;
@@ -248,6 +261,13 @@ display: block;
 /* Mobile */
 @media screen and (max-width:767px ) {
 
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+
+
 .mobile-only{
     bottom: 50px;
 }    
@@ -267,7 +287,7 @@ header {
     top: 0;
     bottom: 954px;
     background-color: rgb(255, 126, 149);
-            }
+  }
 .logo {
  /* logo */
     position: absolute;
@@ -294,6 +314,7 @@ header {
 
 .menu-button {
     position: absolute;
+    display:block;
     top: 7px;
     left: 335px;
     font-size: 40px;
@@ -344,7 +365,51 @@ header {
     
 }
 
+footer {
+    height: 70px;
+    width: 70px;
+    width: auto;
+    background-color: #FF7E95;
+    text-align: center;
+    padding: 0;
+    margin: 0;
 }
+
+.footer-text {
+    font-family: Alexander;
+    text-decoration: none;
+    color: rgb(0, 0, 0);  
+    font-size: 12px;
+    margin: 0px;
+}
+
+
+.logo2 {
+    position: none;
+
+    }
+
+.div-logo2{
+    display: none;
+    }
+
+.social-img3{
+    display: none;
+    }
+        
+.instagram-footer{
+    display: none; 
+    }
+        
+.viber-footer {
+    display: none;
+    }
+
+}
+
+
+
+
 
 
 
