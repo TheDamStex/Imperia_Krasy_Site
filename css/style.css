@@ -1,11 +1,11 @@
 @font-face {
     font-family: "Alexander";
-    src: url("C:\Users/entte/Desktop/Imperia_Krasy_Site/fonts/Alexander.eot");
-    src: url("C:\Users/entte/Desktop/Imperia_Krasy_Site/fonts/Alexander.eot?#iefix") format("embedded-opentype"),
-         url("C:\Users/entte/Desktop/Imperia_Krasy_Site/fonts/Alexander.woff2") format("woff2"),
-         url("C:\Users/entte/Desktop/Imperia_Krasy_Site/fonts/Alexander.woff") format("woff"),
-         url("C:\Users/entte/Desktop/Imperia_Krasy_Site/fonts/Alexander.ttf") format("truetype"),
-         url("C:\Users/entte/Desktop/Imperia_Krasy_Site/fonts/Alexander.svg#Alexander") format("svg");
+    src: url("/fonts/Alexander.eot");
+    src: url("/fonts/Alexander.eot?#iefix") format("embedded-opentype"),
+         url("/fonts/Alexander.woff2") format("woff2"),
+         url("/fonts/Alexander.woff") format("woff"),
+         url("/fonts/Alexander.ttf") format("truetype"),
+         url("/fonts/Alexander.svg") format("svg");
 }
 
 
@@ -310,16 +310,17 @@ header {
     padding: 20px;
     box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
     font-family: Alexander;
+    
 }
 
-.menu-button {
+.menu-button{
     position: absolute;
     display:block;
     top: 7px;
     left: 335px;
     font-size: 40px;
     cursor: pointer;
-    color: #333;
+    color: #ffffff;
 }
 
 .close-button {
@@ -344,12 +345,34 @@ header {
     height: 48px;
     top: 40px;
     left: 20px;
+    
 
 }
 
 .text-menu-logo {
     margin-left: 60px;
     margin-bottom: 30px;
+}
+
+.text-menu-li {
+    font-size: 20px;
+}
+
+.text-menu-li a {
+    text-decoration: none; /* Убираем подчеркивание */
+    color: inherit; /* Наследуем цвет от родителя */
+
+}
+
+.text-menu-li a {
+    color: inherit; /* Наследуем цвет от родителя */
+    text-decoration: none;
+    transition: text-shadow 0.3s ease; /* Плавный переход */
+}
+
+.text-menu-li a:hover{
+    color: rgb(153, 111, 111);
+    text-shadow: 0 0 10px rgb(153, 111, 111);; /* Красное свечение вокруг текста */
 }
 
 .instagram{
