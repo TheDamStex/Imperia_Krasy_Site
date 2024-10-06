@@ -1,0 +1,53 @@
+.gl-ph {
+    padding: 0px;
+    margin: 0px;
+    display: block;  
+}
+
+/* ПК версия */
+@media screen and (min-width: 768px) {
+    
+    .mobile-only { /* Скрываем селектор все что выше мобилки */
+        display: none;
+    }
+
+    main {
+        flex-grow: 1;
+        background-color: rgb(255, 255, 255);
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .main2{
+        background-color: rgb(255, 255, 255);
+        margin: 0px;
+        padding: 0px;
+    }
+
+
+
+}
+
+@media screen and (max-width:998px ) {
+    
+
+}
+@media screen and (max-width:768px ) {
+
+
+}
+
+
+/* Мобильная версия */
+@media screen and (max-width:767px ) {
+    .mobile-only{
+        bottom: 50px;
+    }    
+    
+    .mobile-only2 {
+        display: none; /* Скрываем главные надписи на мобилке */
+    }
+
+    
+    
+}

@@ -1,4 +1,4 @@
-@font-face {
+@font-face { /* Подключение шрифта */
     font-family: "Alexander";
     src: url("/fonts/Alexander.eot");
     src: url("/fonts/Alexander.eot?#iefix") format("embedded-opentype"),
@@ -7,7 +7,7 @@
          url("/fonts/Alexander.ttf") format("truetype"),
          url("/fonts/Alexander.svg") format("svg");
 }
-
+/* Преалодер и анимация к нему */
 .preloader{
     position: fixed;
     left: 0;
@@ -50,11 +50,11 @@
         transform: translate(-50%, -50%) rotate(360deg);
     }
 }
-
+/* Плавное появление элементов при скролле */
 .scroll-element {
     opacity: 0; /* Изначально элементы невидимы */
     transform: translateY(20px); /* Легкий сдвиг вниз */
-    transition: opacity 1.6s ease-out, transform 0.6s ease-out;
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
     z-index: 1;
 }
 
@@ -63,9 +63,23 @@
     transform: translateY(0); /* Возвращаем на место */
 }
 
-        
+a {
+    color: rgb(255, 53, 53);
+    text-decoration: none;
+    transition: text-shadow 0.3s ease; /* Плавный переход */
+}
 
+a:hover{
+    color: rgb(153, 111, 111);
+    text-shadow: 0 0 10px rgb(153, 111, 111);; /* Красное свечение вокруг текста */
+}
+
+        
+/* ПК версия */
 @media screen and (min-width: 768px) {
+    .mobile-only { /* Скрываем селектор все что выше мобилки */
+        display: none;
+    }
 
     body {
         margin: 0;
@@ -89,27 +103,7 @@
         top: 0; /* Это оставляет заголовок в верхней части страницы */
         background-color: #ff7e95;
         z-index: 2;
-    }
-
-    
-    main {
-        flex-grow: 1;
-        background-color: rgb(255, 255, 255);
-        padding: 0px;
-        margin: 0px;
-    }
-    
-    footer {
-        height: auto;
-        background-color: #FF7E95;
-        text-align: center;
-        position:relative;
-        margin: 0px;
-        bottom: 0px;
-
-
-    }
-    
+    }  
 
     .logo {
 /* logo */
@@ -129,13 +123,13 @@
     }
 
     .logo2 {
-        /* logo */
-            position: absolute;
-            width: 64px;
-            height: 60px;  
-            left: 138px;  
-            bottom: 5px;
-            }
+    /* logo */
+    position: absolute;
+    width: 64px;
+    height: 60px;  
+    left: 138px;  
+    bottom: 5px;
+    }
 
 .social-img{
     /* icon-instagram */
@@ -184,27 +178,6 @@ margin-top: 35px;
     top: 1px;
 }
 
-.instagram-footer{
-    position: absolute;
-    width: 32px;
-    height: 32px;
-}
-
-.viber-footer {
-    position: absolute;
-    width: 32px;
-    height: 32px;
-    margin-left: 50px;
-    top: 1px;
-
-}
-
-.text-footer{
-    position: absolute;
-    left: 55px;
-    top: 50px;
-
-}
 .text-gl1{
 /* Головна */
     position: absolute;
@@ -266,15 +239,16 @@ margin-top: 35px;
         text-align: left;
     }
 
-    a {
-        color: rgb(255, 53, 53);
-        text-decoration: none;
-        transition: text-shadow 0.3s ease; /* Плавный переход */
-    }
 
-    a:hover{
-        color: rgb(153, 111, 111);
-        text-shadow: 0 0 10px rgb(153, 111, 111);; /* Красное свечение вокруг текста */
+    footer {
+        height: auto;
+        background-color: #FF7E95;
+        text-align: center;
+        position:relative;
+        margin: 0px;
+        bottom: 0px;
+
+
     }
 
     .footer-text {
@@ -287,17 +261,28 @@ margin-top: 35px;
         bottom: 0px;
     }
 
-    .gl-ph {
-padding: 0px;
-margin: 0px;
-display: block;
+    .instagram-footer{
+        position: absolute;
+        width: 32px;
+        height: 32px;
+    }
+    
+    .viber-footer {
+        position: absolute;
+        width: 32px;
+        height: 32px;
+        margin-left: 50px;
+        top: 1px;
+    
+    }
+    
+    .text-footer{
+        position: absolute;
+        left: 55px;
+        top: 50px;
+    
+    }  
 
-    }
-    .main2{
-        background-color: rgb(255, 255, 255);
-        margin: 0px;
-        padding: 0px;
-    }
 }
 
 @media screen and (max-width:998px ) {
@@ -308,31 +293,24 @@ display: block;
 
 
 }
-/* Mobile */
-@media (min-width: 768px) {
-    .mobile-only { /* Скрываем селектор все что выше мобилки */
-        display: none;
-    }
-    
-}
+
+
 /* Mobile */
 @media screen and (max-width:767px ) {
+
+    .mobile-only{
+        bottom: 50px;
+    }    
+    
+    .mobile-only2 {
+        display: none; /* Скрываем главные надписи на мобилке */
+    }    
 
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
    }
-
-
-.mobile-only{
-    bottom: 50px;
-}    
-
-.mobile-only2 {
-    display: none; /* Скрываем главные надписи на мобилке */
-}
-
 
 header {
  /* Header 1 */
