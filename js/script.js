@@ -57,4 +57,17 @@ window.addEventListener('scroll', showOnScroll);
 // Вызываем функцию при загрузке страницы, чтобы элементы проверялись сразу
 document.addEventListener('DOMContentLoaded', showOnScroll);
 
+
+
+function toggleDetails(id) {
+  var element = document.getElementById(id);
+  
+  if (element.style.display === "block") {
+      element.style.display = "none";
+  } else {
+      element.style.display = "block";
+  }
+}
+
+
   
