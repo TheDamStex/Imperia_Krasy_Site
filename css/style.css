@@ -88,6 +88,20 @@ header::after {
 
 }
 
+footer::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0; /* Размещаем линию вверху футера */
+    left: 0;
+    width: 100%;
+    height: 1px; /* Толщина линии */
+    background-color: #000000; /* Цвет линии */
+    z-index: 1;
+}
+
+
+
         
 /* ПК версия */
 @media screen and (min-width: 768px) {
@@ -131,20 +145,6 @@ header::after {
         
     }
 
-    .div-logo2{
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-
-    .logo2 {
-    /* logo */
-    position: absolute;
-    width: 64px;
-    height: 60px;  
-    left: 138px;  
-    bottom: 5px;
-    }
-
 .social-img{
     /* icon-instagram */
     position: absolute;
@@ -169,14 +169,7 @@ margin-top: 35px;
     
 }
 
-.social-img3{
-    position: absolute;
-    left: 1400px;
-    right: 124px;
-    top: 20px;
-    margin: 0px;
-    bottom: 0px;
-    }
+
 
 .instagram{
     position: absolute;
@@ -255,37 +248,75 @@ margin-top: 35px;
 
 
     footer {
-        height: auto;
+        height: 90px;
+        width: auto;
         background-color: #FF7E95;
         text-align: center;
         position:relative;
         margin: 0px;
         bottom: 0px;
-
-
+        
     }
+
+    .div-footer-text {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        height: 40px;
+        text-align: center;
+        width: 100%; /* Если не установлено */
+        position: relative; /* Попробуйте это для контроля позиции */
+        margin-top: -50px;
+    }
+    
 
     .footer-text {
         font-family: Alexander;
-        position:static;
         text-decoration: none;
         color: rgb(255, 255, 255);  
         font-size: 16px;
-        margin: 0px;
-        bottom: 0px;
+        text-align: center;
     }
 
+    .social-img3{
+        position: relative;
+        margin: 0px;
+        padding: 0px;
+        margin-right: 80px;
+        bottom: 40px;
+        text-align: right;
+        height: 32px;
+        }
+
+
+
+        .logo2 {
+            /* logo */
+            position: relative;
+            display: flex;
+            width: 64px;
+            height: 60px;  
+        
+            }
+            
+            .div-logo2{
+                margin-top: 15px;
+                margin-left: 125px;
+                width: 64px;
+                height: 60px;
+            }
+
     .instagram-footer{
-        position: absolute;
+        position: relative;
         width: 32px;
         height: 32px;
     }
     
     .viber-footer {
-        position: absolute;
+        position: relative;
         width: 32px;
         height: 32px;
-        margin-left: 50px;
+        margin-left: 15px;
         top: 1px;
     
     }
@@ -458,21 +489,33 @@ header {
 }
 
 footer {
-    height: 70px;
-    width: 70px;
+    position:relative;
+    height: 90px;
     width: auto;
     background-color: #FF7E95;
     text-align: center;
     padding: 0;
     margin: 0;
+
+}
+
+.div-footer-text {
+    justify-content: center;
+    display: flex;
+    height: 40px;
+    text-align: center;
+    width: 100%; /* Если не установлено */
+    position: relative; /* Попробуйте это для контроля позиции */
+    bottom: 5px;
 }
 
 .footer-text {
+    display: flex;
     font-family: Alexander;
     text-decoration: none;
     color: rgb(255, 255, 255);  
     font-size: 12px;
-    margin: 0px;
+    
 }
 
 

@@ -1,0 +1,179 @@
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+main {
+    flex: 1; /* Заставляет main заполнять пространство */
+    padding-bottom: 100px; /* Добавьте отступ снизу, чтобы footer не перекрывался */
+    
+}
+
+
+
+@media screen and (min-width: 768px) {
+.fon{
+    background-color: #f34162;
+    width: auto;
+    height: 160px;
+    margin: 0;
+}
+.main-poslugi {
+    font-family: Alexander;
+    padding-bottom: 10px;
+}
+
+.services {
+    margin: 20px;
+    margin-top: 0px;
+}
+
+.service {
+    border-bottom: 1px solid #d3d3d3;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.details {
+    display: none;
+    position: relative;
+    padding: 10px;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+
+    
+}
+
+.details p {
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.service p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    margin: 0;
+}
+
+.massaz {
+    font-size: 16px;
+    margin: 0;
+}
+
+.massas{
+    font-size: 32px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    font-weight: bold;
+    
+}
+
+.container{
+    margin-bottom: 30px;
+    height: auto;
+    overflow: visible;
+}
+
+.button-container {
+    padding-top: 90px;
+    padding-right: 30px;
+    padding-left: 50px;
+
+}
+
+button {
+    background-color: #f34162; /* Основной цвет */
+    color: #ffffff; /* Второстепенный цвет (текст) */
+    border: 2px solid #f34162; /* Цвет границы */
+    padding: 10px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 70%;
+}
+
+button:hover {
+    background-color: #ffffff;
+    color: #f34162;
+    border: 2px solid #f34162;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:active {
+    background-color: #d52a4b; /* Темная версия основного цвета для клика */
+    color: #ffffff;
+}
+
+
+
+
+}
+
+/* Мобильная версия */
+@media screen and (max-width:767px ) {
+
+    .fon{
+        background-color: #f34162;
+        width: auto;
+        height: 160px;
+        margin: 0;
+    }
+
+    .main-poslugi {
+        font-family: Alexander;
+    }
+    
+    .services {
+        margin: 20px;
+        margin-top: 70px;
+    }
+    
+    .service {
+        border-bottom: 1px solid #d3d3d3;
+        padding: 10px;
+        cursor: pointer;
+    }
+    
+    .details {
+        display: none;
+        padding: 10px;
+        background-color: #f9f9f9;
+        margin-bottom: 10px;
+    }
+    
+    .details p {
+        margin: 0;
+    }
+    
+    .service p {
+        display: flex;
+        justify-content: space-between;
+        font-size: 18px;
+        margin: 0;
+    }
+    
+    .massaz {
+        font-size: 23px;
+        margin: 0;
+    }
+
+    .massas{
+        font-size: 32px;
+        margin-left: 30px;
+        margin-bottom: 10px;
+        margin-top: 15px;
+        font-weight: bold;
+        
+    }
+
+}

@@ -69,5 +69,11 @@ function toggleDetails(id) {
   }
 }
 
+// Скролл к нужным услугам
+function scrollToSection(sectionId) {
+  document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+}
+
+
 
   
